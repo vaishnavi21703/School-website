@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My School Website</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Dark Mode Toggle Button -->
+  <button class="dark-mode-toggle" onclick="toggleDarkMode()">Dark Mode</button>
+
+  <!-- Header & Navigation -->
+  <header>
+    <div class="logo-container">
+      <img src="https://img.freepik.com/free-vector/gradient-high-school-logo-design_23-2149626932.jpg?semt=ais_hybrid" alt="School Logo" class="logo" />
+      <h1 class="school-name">My Great School</h1>
+    </div>
+    <button class="mobile-menu-btn" onclick="toggleMobileMenu()">☰</button>
+    <nav class="navbar" id="navbar">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#admissions">Admissions</a></li>
+        <li><a href="#events">Events</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Landing Section (Home) -->
+  <section class="hero-section" id="home">
+    <div class="hero-content">
+      <h2>Welcome to My Great School</h2>
+      <p>Empowering Students for a Brighter Future</p>
+      <button class="cta-button" onclick="scrollToSection('admissions')">Apply Now</button>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about-section" id="about">
+    <h2>Our History & Mission</h2>
+    <p>
+      Founded in 1990, My Great School has been dedicated to nurturing
+      students academically, socially, and emotionally. Our mission is
+      to foster an environment that inspires learning and encourages
+      students to achieve their fullest potential.
+    </p>
+
+    <div class="principles-grid">
+      <div class="principle-card">
+        <h3>Integrity</h3>
+        <p>We uphold the highest standards of honesty and fairness.</p>
+      </div>
+      <div class="principle-card">
+        <h3>Excellence</h3>
+        <p>We strive for excellence in academics and personal growth.</p>
+      </div>
+      <div class="principle-card">
+        <h3>Respect</h3>
+        <p>We value each member of our community and embrace diversity.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Admissions Section -->
+  <section class="admissions-section" id="admissions">
+    <h2>Admissions & Curriculum</h2>
+    <p>
+      Learn about our admissions process, requirements, and academic curriculum.
+    </p>
+
+    <div class="admissions-info">
+      <ul>
+        <li>Completed application form</li>
+        <li>Previous academic transcripts</li>
+        <li>Entrance examination for certain grades</li>
+        <li>Parent/Guardian interview</li>
+      </ul>
+    </div>
+
+    <div class="subjects-container">
+      <div class="subject-card">
+        <h3>Mathematics</h3>
+        <p>Algebra, Geometry, Calculus, Statistics</p>
+      </div>
+      <div class="subject-card">
+        <h3>Science</h3>
+        <p>Biology, Chemistry, Physics</p>
+      </div>
+      <div class="subject-card">
+        <h3>Humanities</h3>
+        <p>History, Literature, Geography</p>
+      </div>
+      <div class="subject-card">
+        <h3>Arts</h3>
+        <p>Visual Arts, Music, Theatre</p>
+      </div>
+    </div>
+
+    <div class="fees-table">
+      <h3>Tuition & Fees</h3>
+      <table>
+        <tr>
+          <th>Grade</th>
+          <th>Annual Tuition</th>
+          <th>Additional Fees</th>
+        </tr>
+        <tr>
+          <td>Kindergarten</td>
+          <td>$2,500</td>
+          <td>$300 (supplies)</td>
+        </tr>
+        <tr>
+          <td>Elementary</td>
+          <td>$3,500</td>
+          <td>$400 (books)</td>
+        </tr>
+        <tr>
+          <td>Middle School</td>
+          <td>$4,500</td>
+          <td>$500 (lab fees)</td>
+        </tr>
+        <tr>
+          <td>High School</td>
+          <td>$5,000</td>
+          <td>$600 (lab & sports)</td>
+        </tr>
+      </table>
+    </div>
+  </section>
+
+  <!-- Events Section -->
+  <section class="events-section" id="events">
+    <h2>Latest News & Events</h2>
+    <div class="events-container">
+      <div class="event-card">
+        <h3>Science Fair</h3>
+        <p>Date: March 20, 2025</p>
+        <p>Showcase your science projects!</p>
+      </div>
+      <div class="event-card">
+        <h3>Art Exhibition</h3>
+        <p>Date: April 10, 2025</p>
+        <p>Discover stunning artworks by our students.</p>
+      </div>
+      <div class="event-card">
+        <h3>Sports Day</h3>
+        <p>Date: May 5, 2025</p>
+        <p>Join us for a day of fun and athletic events.</p>
+      </div>
+    </div>
+    <button class="show-hide-btn" onclick="toggleExtraInfo()">Show More Info</button>
+    <div class="extra-info" id="extraInfo" style="display: none;">
+      <p>For more details, please contact our events coordinator at events@myschool.com.</p>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <section class="gallery-section" id="gallery">
+    <h2>Our Gallery</h2>
+    <div class="gallery-grid">
+      <img src="https://images.pexels.com/photos/1164572/pexels-photo-1164572.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Gallery Image 1">
+      <img src="https://images.pexels.com/photos/764681/pexels-photo-764681.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Gallery Image 2">
+      <img src="https://images.pexels.com/photos/710743/pexels-photo-710743.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Gallery Image 3">
+      <img src="https://images.pexels.com/photos/256395/pexels-photo-256395.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Gallery Image 4">
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact-section" id="contact">
+    <h2>Contact Us</h2>
+    <form id="contactForm" onsubmit="return validateForm()">
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" placeholder="Enter your name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" placeholder="Enter your email" required>
+
+      <label for="message">Message:</label>
+      <textarea id="message" rows="4" placeholder="Your message here..." required></textarea>
+
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 My Great School. All Rights Reserved.</p>
+  </footer>
+
+  <!-- Pop-up Modal -->
+  <div class="modal" id="myModal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <h2>Special Announcement</h2>
+      <p>Don’t miss our upcoming Open House event!</p>
+      <button onclick="closeModal()">Got it!</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
